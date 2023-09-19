@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O mundo e suas belezas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css
+    ">
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            color: black;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        .col-4 img {
+            padding-top: 24px;
+            max-width: 100px;
+            
+        }
+
+    @media screen and (max-width: 767px) {
+        .carousel-exemplo {
+            display: grid;
+            grid-template-columns: repeat(2,50%)
+        }
+
+        .container {
+            max-width: 767px; /*largura máxima*/
+            width: 100%;
+            margin: 0 auto; /*centralizar na horizontal*/
+        }
+
+        img {
+            display: grid;
+            grid-template-columns: 2, 50%;
+        }
+    }
+    </style>
+</head>
+<body>
+    <h1>Paraízo</h1>
+    <div class="container">
+        <div class="card text-bg-dark"> <!-- se o texto nãoficar bem visível sobre a imagem usa-se "text-bg-dark"-->
+            <img src="https://cdn.pixabay.com/photo/2023/09/07/22/58/cat-8240012_1280.jpg" />
+            <div class="card-img-overlay"> <!--a imagem fica como papel de fundo do card-->
+                <h4 class="card-title">Gatinho sapeca</h4>
+                <h5 class="card-subtitle">Uma vida divertida</h5>
+                <p class="card-text">
+                    Querendo ter uma vida mais feliz? Adote um gato, de preferência, um gatinho de rua, para oqual você possa dar muito amor, carinho e proteção. 
+                </p>
+                <a href="#" class="btn btn-primary">Botão link</a>
+            </div>
+        </div>
+        <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner"> <!--container do carousel-->
+                <div data-bs-interval="2000" class="carousel-item active" > <!--slides do carousel-->
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2023/03/12/19/18/trees-7847683_1280.jpg"/>
+                    <div class="carousel-caption">
+                        <h2>Foto de casas na neve</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="2000" class="carousel-item" >
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2023/08/18/01/32/cat-8197577_1280.jpg"/>
+                    <div class="carousel-caption">
+                        <h2>Foto de um gato</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="2000" class="carousel-item" >
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2023/06/18/07/31/willow-warbler-8071472_1280.jpg"/>
+                    <div class="carousel-caption">
+                        <h2>Foto de um passarinho</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="2000" class="carousel-item" >
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2023/08/26/22/44/brewers-blackbird-8215850_1280.jpg"/>
+                    <div class="carousel-caption">
+                        <h2>Foto de um passarinho</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="2000" class="carousel-item" >
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2023/09/09/11/55/cat-8243079_1280.jpg"/>
+                    <div class="carousel-caption">
+                        <h2>Gatinho escondido</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="2000" class="carousel-item" >
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2023/05/14/17/46/ducklings-7993465_1280.jpg">
+                    <div class="carousel-caption">
+                        <h2>Gatinho escondido</h2>
+                    </div>
+                </div>
+            </div>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="4"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="5"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="6"></button>
+            </div>
+        </div>
+        <div class="col-4">
+            <table>
+                <tr>
+                    <th>
+                        <td>
+                            <img src="https://cdn.pixabay.com/photo/2023/09/07/22/58/cat-8240012_1280.jpg" />
+                            <img src="https://cdn.pixabay.com/photo/2023/08/18/01/32/cat-8197577_1280.jpg" alt="">
+                            <img src="https://cdn.pixabay.com/photo/2023/06/18/07/31/willow-warbler-8071472_1280.jpg" alt="">
+                            <img src="https://cdn.pixabay.com/photo/2023/08/26/22/44/brewers-blackbird-8215850_1280.jpg" alt="">
+                            <img src="https://cdn.pixabay.com/photo/2023/09/09/11/55/cat-8243079_1280.jpg" alt="">
+                            <img src="https://cdn.pixabay.com/photo/2023/05/14/17/46/ducklings-7993465_1280.jpg" alt="">
+                        </td>
+                    </th>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js
+    "></script>
+</body>
+</html>
